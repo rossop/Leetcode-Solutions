@@ -12,8 +12,7 @@ class Solution:
         
         # Reflection
         for i in range(n):
-            for j in range(n // 2):
-                matrix[i][j], matrix[i][n-j-1] = matrix[i][n-j-1], matrix[i][j]
+            matrix[i].reverse()
         
         # Time: O(n^2)
         # Space: O(1)
